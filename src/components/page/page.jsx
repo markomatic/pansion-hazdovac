@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import classNames from 'classnames';
 import { Element } from 'react-scroll';
 import './page.scss';
 
