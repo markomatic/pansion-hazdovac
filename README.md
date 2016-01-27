@@ -7,4 +7,4 @@
 
 # Resources
 
-1. https://christianalfoni.github.io/react-webpack-cookbook/index.html
+1. [React Webpack Cookbook](https://christianalfoni.github.io/react-webpack-cookbook/index.html)
