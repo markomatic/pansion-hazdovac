@@ -7,4 +7,5 @@
 
 # Resources
 
+1. [React](https://facebook.github.io/react/)
 1. [React Webpack Cookbook](https://christianalfoni.github.io/react-webpack-cookbook/index.html)
