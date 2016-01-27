@@ -9,8 +9,7 @@ export default {
         vendor: [
             'react',
             'react-dom',
-            'react-scroll',
-            'classnames'
+            'react-scroll'
         ]
     },
     output: {
