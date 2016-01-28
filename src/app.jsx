@@ -9,8 +9,8 @@ export default class extends React.Component {
     render() {
         return (
             <div>
-                <LandingPage />
-                <GalleryPage />
+                <LandingPage nextPage="gallery" />
+                <GalleryPage nextPage="contact" />
                 <ContactPage />
             </div>
         );

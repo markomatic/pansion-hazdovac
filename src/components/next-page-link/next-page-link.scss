@@ -1,0 +1,14 @@
+@import './../../base';
+
+.NextPageLink {
+  text-align: center;
+  padding-top: 10px;
+
+  div.image {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url('./../../assets/next-page.png');
+    @include background-size(cover);
+  }
+}
