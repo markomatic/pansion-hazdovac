@@ -9,7 +9,8 @@ export default {
         vendor: [
             'react',
             'react-dom',
-            'react-scroll'
+            'react-scroll',
+            'react-photo-gallery'
         ]
     },
     output: {
@@ -19,7 +20,7 @@ export default {
     module: {
         loaders: [
             {
-                test: /\.jsx$/,
+                test: /\.(js|jsx)$/,
                 loaders: ['babel']
             },
             {
