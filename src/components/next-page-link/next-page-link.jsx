@@ -16,7 +16,7 @@ export default class extends React.Component {
 
         return (
             <div className="NextPageLink">
-                <Link to={page} spy={true} smooth={true} offset={0} duration={500}>
+                <Link to={page} spy={true} smooth={true} offset={-50} duration={500}>
                     <div className="image"></div>
                 </Link>
             </div>
