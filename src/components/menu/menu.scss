@@ -1,0 +1,36 @@
+@import './../../base';
+
+.Menu {
+  ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+
+    list-style: none;
+
+    @include flex;
+  }
+
+  li {
+    -webkit-flex-grow: 1; /* Safari 7.0+ */
+    flex-grow: 1;
+
+    text-align: center;
+  }
+
+  a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+
+    /* TEST */
+    /*background-color: yellow;*/
+  }
+
+  a {
+    &:hover,
+    &.selected {
+      color: white;
+      background-color: #203d75;
+    }
+  }
+}

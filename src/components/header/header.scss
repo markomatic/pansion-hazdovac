@@ -1,0 +1,15 @@
+@import './../../base';
+
+.Header {
+  background-color: sandybrown;
+
+  .Sticky {
+    background-color: sandybrown;
+  }
+
+  .Menu {
+    @include for-screen(small) {
+      display: none;
+    }
+  }
+}
