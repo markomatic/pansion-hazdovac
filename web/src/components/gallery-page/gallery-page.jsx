@@ -25,7 +25,8 @@ export default class extends React.Component {
 
     render() {
         return (
-            <Page className="GalleryPage" page="gallery" nextPage={this.props.nextPage}>
+            <Page className="GalleryPage"
+                  page="gallery" {...this.props}>
                 <Gallery photos={galleryImages} /><br />
                 <div style={{clear: 'both'}}></div>
             </Page>

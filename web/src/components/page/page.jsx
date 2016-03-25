@@ -8,16 +8,19 @@ import './page.scss';
 export default class Page extends React.Component {
     render() {
         let className = 'Page';
-        const propClassName = this.props.className;
+        const props = this.props;
+        const propClassName = props.className;
 
         if(propClassName) {
             className = `${className} ${propClassName}`;
         }
 
         return (
-            <Element className={className} name={this.props.page}>
-                {this.props.children}
-                <NextPageLink page={this.props.nextPage} />
+            <Element className={className}
+                     name={props.page}
+                     style={props.pageStyle || {}}>
+                {props.children}
+                <NextPageLink page={props.nextPage} />
             </Element>
         );
     }

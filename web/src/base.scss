@@ -1,3 +1,9 @@
+/*
+
+Apply css for screen sizes
+
+*/
+
 @mixin for-screen($dimension) {
   @if $dimension == x-small {
     @media all and (max-width: 480px) {
@@ -18,6 +24,12 @@
   }
 }
 
+/*
+
+Misc
+
+*/
+
 @mixin background-size($size) {
   -webkit-background-size: $size;
   -moz-background-size: $size;
@@ -25,10 +37,42 @@
   background-size: $size;
 }
 
+@mixin tap-highlight-color($color) {
+  -webkit-tap-highlight-color: $color;
+}
+
+/*
+
+ flexbox
+
+ */
+
 @mixin flex {
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Chrome */
   display: flex;
+}
+
+@mixin flex-grow($size) {
+  -webkit-flex-grow: $size; /* Safari 7.0+ */
+  flex-grow: $size;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value; /* Safari 6.1+ */
+  -moz-justify-content: $value; /* Firefox 27- */
+  justify-content: $value;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items: $value; /* Safari 7.0+ */
+  align-items: $value;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction; /* Safari 6.1+ */
+  -moz-flex-direction: $direction; /* Firefox 27- */
+  flex-direction: $direction;
 }

@@ -1,29 +1,58 @@
 @import './../../base';
 
 .Menu {
+  nav {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    @include for-screen(small) {
+      height: auto;
+    }
+  }
+
   ul {
-    margin: 0 0 0 20px;
+    height: 100%;
+    margin: 0;
     padding: 0;
 
     list-style: none;
 
     @include flex;
+    @include justify-content(flex-end);
+
+    @include for-screen(small) {
+      height: auto;
+      @include flex-direction(column);
+    }
   }
 
   li {
-    -webkit-flex-grow: 1; /* Safari 7.0+ */
-    flex-grow: 1;
-
+    height: 100%;
+    @include flex-grow(1);
     text-align: center;
+
+    @include for-screen(small) {
+      height: auto;
+    }
   }
 
   a {
-    padding: 10px;
-    display: block;
+    @include flex;
+    @include align-items(center);
+    @include justify-content(center);
+    min-height: 50px;
+    height: 100%;
     text-decoration: none;
 
-    /* TEST */
-    /*background-color: yellow;*/
+    @include for-screen(small) {
+      @include justify-content(flex-start);
+    }
+
+    span {
+      padding: 0 15px 0;
+      line-height: 50px;
+    }
   }
 
   a {

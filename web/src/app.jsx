@@ -5,7 +5,8 @@ import LandingPage from './components/landing-page/landing-page.jsx';
 import GalleryPage from './components/gallery-page/gallery-page.jsx';
 import ContactPage from './components/contact-page/contact-page.jsx';
 import Header from './components/header/header.jsx';
-import {slide as Menu} from 'react-burger-menu';
+import SideMenu from './components/side-menu/side-menu.jsx';
+
 import './app.scss';
 
 export default class extends React.Component {
@@ -13,25 +14,39 @@ export default class extends React.Component {
         super(props);
 
         this.state={
-            isMenuOpened: false
+            isMenuOpened: false,
+            isSticky: false
         };
     }
 
     render() {
-        const state=this.state;
+        const state = this.state;
+        const isSticky = state.isSticky;
 
         return (
-            <div id="main-container">
-                <Menu left width={280} customIcon={'img/icon.svg'} isOpened={state.isMenuOpened} pageWrapId="content-container" outerContainerId="main-container">
-
-                </Menu>
-                <div id="content-container">
-                    <Header />
-                    <LandingPage nextPage="gallery" />
-                    <GalleryPage nextPage="contact" />
+            <div id={'main-container'}>
+                <SideMenu ref={c => this.sideMenu = c}
+                          pageWrapId={'content-container'}
+                          outerContainerId={'main-container'}
+                          linkOffset={50}/>
+                <div id={'content-container'}>
+                    <Header onStickyStateChange={this.handleStickyStateChange.bind(this)}
+                            onSideMenuOpen={this.handleOnSideMenuOpen.bind(this)}/>
+                    <LandingPage nextPage={'gallery'}
+                                 pageStyle={{marginTop: (isSticky ? 50 : 0)}} />
+                    <GalleryPage nextPage={'contact'} />
                     <ContactPage />
                 </div>
             </div>
         );
+    }
+
+    handleStickyStateChange(isSticky) {
+        this.setState({isSticky});
+    }
+
+    handleOnSideMenuOpen() {
+        const sideMenu = this.sideMenu;
+        sideMenu && sideMenu.open();
     }
 }

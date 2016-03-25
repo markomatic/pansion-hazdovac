@@ -1,15 +1,49 @@
 @import './../../base';
+@import './../../colors';
 
 .Header {
-  background-color: sandybrown;
+  position: relative;
+  background-color: $headerBackgroundColor;
 
   .Sticky {
-    background-color: sandybrown;
+    background-color: $headerBackgroundColor;
   }
 
-  .Menu {
-    @include for-screen(small) {
+  .HeaderResizable {
+    &.logo {
+      @include for-screen(small) {
+        left: 100px;
+        right: 0;
+        width: auto;
+      }
+    }
+
+    &.menu {
+      left: 55%;
+      right: 0;
+
+      @include for-screen(small) {
+        display: none;
+      }
+    }
+
+    .Menu {
+      height: 100%;
+    }
+
+    &.menuButton {
       display: none;
+
+      @include for-screen(small) {
+        display: block;
+      }
+    }
+  }
+
+  .Logo {
+    @include for-screen(small) {
+      background-position: right;
+      width: 100%;
     }
   }
 }
