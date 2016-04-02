@@ -10,6 +10,12 @@ export default class extends React.Component {
         this.state = {
             style: this.getStyle()
         };
+
+        this.handlePageScroll = e => {
+            this.setState({
+                style: this.getStyle()
+            });
+        };
     }
 
     getStyle() {
@@ -30,18 +36,12 @@ export default class extends React.Component {
             document.documentElement.scrollTop : document.body.scrollTop;
     }
 
-    handlePageScroll(e) {
-        this.setState({
-            style: this.getStyle()
-        });
-    }
-
     componentDidMount() {
-        document.addEventListener('scroll', this.handlePageScroll.bind(this));
+        document.addEventListener('scroll', this.handlePageScroll);
     }
 
     componentWillUnmount() {
-        document.removeEventListener('scroll', this.handlePageScroll.bind(this));
+        document.removeEventListener('scroll', this.handlePageScroll);
     }
 
     render() {

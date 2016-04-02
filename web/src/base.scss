@@ -55,6 +55,13 @@ Misc
   display: flex;
 }
 
+@mixin flex-size($size) {
+  -webkit-flex: $size; /* Safari 6.1+ */
+  -ms-flex: $size; /* IE 10 */
+  -moz-flex: $size;
+  flex: $size;
+}
+
 @mixin flex-grow($size) {
   -webkit-flex-grow: $size; /* Safari 7.0+ */
   flex-grow: $size;
@@ -75,4 +82,10 @@ Misc
   -webkit-flex-direction: $direction; /* Safari 6.1+ */
   -moz-flex-direction: $direction; /* Firefox 27- */
   flex-direction: $direction;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value; /* Safari 6.1+ */
+  -moz-flex-wrap: $value;
+  flex-wrap: $value;
 }

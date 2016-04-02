@@ -1,9 +1,51 @@
-.ContactPage {
-  background-color: yellow;
+@import './../../base';
 
-  p {
-    margin: 0;
-    padding: 0;
-    text-align: justify;
+.ContactPage {
+  background: #ebebeb;
+  //background: #666666;
+
+  @include flex;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+
+  @include for-screen(small) {
+    @include flex-direction(column);
+  }
+
+  .Map {
+    @include flex-size(1 1 auto);
+    margin-top: 10px;
+  }
+
+  .contactInfo {
+    @include flex-size(1 1 auto);
+    min-width: 300px;
+
+    @include for-screen(small) {
+      min-width: initial;
+    }
+
+    .info {
+      @include flex;
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+
+      .box {
+        border: 1px solid #fff;
+        background: #ededed;
+        -moz-box-shadow: 1px 2px 3px #C6C5C5;
+        -webkit-box-shadow: 1px 2px 3px #C6C5C5;
+        /*border: 1px solid #000;
+        background: #808080;
+        -moz-box-shadow: 1px 2px 3px #4d4d4d;
+        -webkit-box-shadow: 1px 2px 3px #4d4d4d;*/
+
+        margin: 10px 10px 0;
+        padding: 20px;
+        width: 250px;
+      }
+    }
   }
 }

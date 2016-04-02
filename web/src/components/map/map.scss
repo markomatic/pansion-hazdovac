@@ -1,0 +1,15 @@
+@import './../../base';
+
+.Map {
+  height: 70vh;
+  min-width: 600px;
+
+  @include for-screen(small) {
+    min-width: initial;
+  }
+
+  > iframe {
+    width:100%;
+    height:100%;
+  }
+}

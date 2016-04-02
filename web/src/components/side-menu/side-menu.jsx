@@ -26,7 +26,7 @@ export default class extends React.Component {
                             onStateChange={this.handleBurgerMenuStateChange.bind(this)}
                             pageWrapId={props.pageWrapId}
                             outerContainerId={props.outerContainerId}>
-                    <Menu linkOffset={props.linkOffset} />
+                    <Menu linkOffset={props.linkOffset} onItemPress={this.handleItemPress.bind(this)}/>
                 </BurgerMenu>
             </div>
         );
@@ -43,6 +43,10 @@ export default class extends React.Component {
         });
     }
 
+    handleItemPress() {
+        this.close();
+    }
+
     open() {
         if (this.state.isMenuOpened) {
             return;
@@ -50,6 +54,16 @@ export default class extends React.Component {
 
         this.setState({
             isMenuOpened: true
+        });
+    }
+
+    close() {
+        if (!this.state.isMenuOpened) {
+            return;
+        }
+
+        this.setState({
+            isMenuOpened: false
         });
     }
 }
