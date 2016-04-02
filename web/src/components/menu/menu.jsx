@@ -19,7 +19,8 @@ export default class extends React.Component {
                                   spy={true}
                                   smooth={true}
                                   offset={-70}
-                                  duration={500}>
+                                  duration={500}
+                                  onClick={this.handleItemClick.bind(this)}>
                                 <span>Home</span>
                             </Link>
                         </li>
@@ -29,7 +30,8 @@ export default class extends React.Component {
                                   spy={true}
                                   smooth={true}
                                   offset={-50}
-                                  duration={500}>
+                                  duration={500}
+                                  onClick={this.handleItemClick.bind(this)}>
                                 <span>Gallery</span>
                             </Link>
                         </li>
@@ -39,7 +41,8 @@ export default class extends React.Component {
                                   spy={true}
                                   smooth={true}
                                   offset={-50}
-                                  duration={500}>
+                                  duration={500}
+                                  onClick={this.handleItemClick.bind(this)}>
                                 <span>Contact</span>
                             </Link>
                         </li>
@@ -47,5 +50,10 @@ export default class extends React.Component {
                 </nav>
             </div>
         );
+    }
+
+    handleItemClick(event) {
+        const onItemPress = this.props.onItemPress;
+        onItemPress && onItemPress(event);
     }
 }

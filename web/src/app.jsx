@@ -19,6 +19,7 @@ export default class extends React.Component {
         };
     }
 
+
     render() {
         const state = this.state;
         const isSticky = state.isSticky;
@@ -33,7 +34,7 @@ export default class extends React.Component {
                     <Header onStickyStateChange={this.handleStickyStateChange.bind(this)}
                             onSideMenuOpen={this.handleOnSideMenuOpen.bind(this)}/>
                     <LandingPage nextPage={'gallery'}
-                                 pageStyle={{marginTop: (isSticky ? 50 : 0)}} />
+                                 pageStyle={{marginTop: (isSticky ? 50 : 0)}}/>
                     <GalleryPage nextPage={'contact'} />
                     <ContactPage />
                 </div>
