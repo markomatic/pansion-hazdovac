@@ -45,20 +45,20 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   margin-bottom: 8px;
   font-size: 22px;
-  color: #2a6888;
+  color: $foregroundDarkAlternateColor;
 }
 
 p {
   font-size: 13px;
-  color: #656565;
+  color: $foregroundDarkColor;
   line-height: 22px;
   margin-bottom: 10px;
 }
 
 h2 {
-  color: #2a6888;
+  color: $foregroundDarkAlternateColor;
 }
 
 p {
-  color: #656565;
+  color: $foregroundDarkColor;
 }

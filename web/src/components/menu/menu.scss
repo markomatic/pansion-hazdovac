@@ -41,25 +41,34 @@
     @include flex;
     @include align-items(center);
     @include justify-content(center);
+    cursor: pointer;
     min-height: 50px;
     height: 100%;
     text-decoration: none;
+    color: $menuForegroundColor;
+    padding: 4px 0 0;
 
     @include for-screen(small) {
       @include justify-content(flex-start);
+      padding: 0 0 0 4px;
+    }
+
+
+    &:hover,
+    &.selected {
+      padding: 0;
+      border: 0 solid $menuForegroundColor;
+      border-top-width: 4px;
+
+      @include for-screen(small) {
+        border: 0 solid $menuForegroundColor;
+        border-left-width: 4px;
+      }
     }
 
     span {
       padding: 0 15px 0;
       line-height: 50px;
-    }
-  }
-
-  a {
-    &:hover,
-    &.selected {
-      color: white;
-      background-color: #203d75;
     }
   }
 }

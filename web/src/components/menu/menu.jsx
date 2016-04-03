@@ -26,6 +26,17 @@ export default class extends React.Component {
                         </li>
                         <li>
                             <Link activeClass="selected"
+                                  to="prices"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                                  onClick={this.handleItemClick.bind(this)}>
+                                <span>Prices</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link activeClass="selected"
                                   to="gallery"
                                   spy={true}
                                   smooth={true}

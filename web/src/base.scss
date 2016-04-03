@@ -1,3 +1,5 @@
+@import './_colors';
+
 /*
 
 Apply css for screen sizes
@@ -43,9 +45,9 @@ Misc
 
 /*
 
- flexbox
+Flexbox
 
- */
+*/
 
 @mixin flex {
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
@@ -88,4 +90,18 @@ Misc
   -webkit-flex-wrap: $value; /* Safari 6.1+ */
   -moz-flex-wrap: $value;
   flex-wrap: $value;
+}
+
+/*
+
+Elements styling
+
+*/
+
+@mixin light-box-element-style {
+  border: 1px solid $boxLightBorder;
+  background: $boxLightBackground;
+  -moz-box-shadow: 1px 2px 3px $boxLightShadow;
+  -webkit-box-shadow: 1px 2px 3px $boxLightShadow;
+  box-shadow: 1px 2px 3px $boxLightShadow;
 }

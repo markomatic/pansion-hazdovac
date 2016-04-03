@@ -1,3 +1,6 @@
+@import './../../base';
+
 .Page {
+  background: $pageBackgroundColor;
   padding: 10px;
 }

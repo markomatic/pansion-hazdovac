@@ -1,9 +1,6 @@
 @import './../../base';
 
 .ContactPage {
-  background: #ebebeb;
-  //background: #666666;
-
   @include flex;
   @include flex-direction(row);
   @include flex-wrap(wrap);
@@ -33,15 +30,7 @@
       @include justify-content(center);
 
       .box {
-        border: 1px solid #fff;
-        background: #ededed;
-        -moz-box-shadow: 1px 2px 3px #C6C5C5;
-        -webkit-box-shadow: 1px 2px 3px #C6C5C5;
-        /*border: 1px solid #000;
-        background: #808080;
-        -moz-box-shadow: 1px 2px 3px #4d4d4d;
-        -webkit-box-shadow: 1px 2px 3px #4d4d4d;*/
-
+        @include light-box-element-style;
         margin: 10px 10px 0;
         padding: 20px;
         width: 250px;

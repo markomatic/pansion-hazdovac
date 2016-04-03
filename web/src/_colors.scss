@@ -1,1 +1,21 @@
-$headerBackgroundColor: #a6a6a6;
+$backgroundDarkColor: #30302f;
+$foregroundDarkColor: #656565;
+$foregroundDarkAlternateColor: #2a6888;
+
+$backgroundLightColor: #ebebeb;
+$foregroundLightColor: #ebebeb;
+
+$pageBackgroundColor: $backgroundLightColor;
+
+$headerBackgroundColor: $backgroundDarkColor;
+$headerForegroundColor: $foregroundLightColor;
+
+$menuForegroundColor: $foregroundLightColor;
+
+$sideMenuBackgroundColor: $backgroundDarkColor;
+$sideMenuForegroundColor: $foregroundLightColor;
+
+// Page box
+$boxLightBorder: #ffffff;
+$boxLightBackground: #ededed;
+$boxLightShadow: #c6c5c5;
