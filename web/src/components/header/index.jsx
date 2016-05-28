@@ -11,11 +11,9 @@ export default class extends Component {
     render() {
         return (
             <div className={'Header'}>
-                <div style={{height:20}}
-                     onPress={()=>this.setState({isMenuOpened:true})}></div>
+                <div style={{height:20}}></div>
                 <Sticky className={'Sticky'}
-                        style={{height:50}}
-                        onStickyStateChange={this.handleStickyStateChange.bind(this)}>
+                        style={{height:50}}>
                     <HeaderResizable className={'menu'}
                                      maxHeight={70}
                                      minHeight={50}>
@@ -34,11 +32,6 @@ export default class extends Component {
                 </Sticky>
             </div>
         );
-    }
-
-    handleStickyStateChange(isSticky) {
-        const onStickyStateChange = this.props.onStickyStateChange;
-        onStickyStateChange && onStickyStateChange(isSticky);
     }
 
     handleOnSideMenuOpen() {
