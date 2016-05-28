@@ -1,21 +1,20 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-import './menu.scss';
 
-export default class extends React.Component {
+export default class extends Component {
     render() {
         const active = window.pageYOffset === 0 ? true : undefined;
 
         return (
-            <div className="Menu">
+            <div className={'Menu'}>
                 <nav>
                     <ul>
                         <li>
-                            <Link activeClass="selected"
+                            <Link activeClass={'selected'}
                                   active={active}
-                                  to="landing"
+                                  to={'landing'}
                                   spy={true}
                                   smooth={true}
                                   offset={-70}
@@ -25,8 +24,8 @@ export default class extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass="selected"
-                                  to="prices"
+                            <Link activeClass={'selected'}
+                                  to={'prices'}
                                   spy={true}
                                   smooth={true}
                                   offset={-70}
@@ -36,8 +35,8 @@ export default class extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass="selected"
-                                  to="gallery"
+                            <Link activeClass={'selected'}
+                                  to={'gallery'}
                                   spy={true}
                                   smooth={true}
                                   offset={-50}
@@ -47,8 +46,8 @@ export default class extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass="selected"
-                                  to="contact"
+                            <Link activeClass={'selected'}
+                                  to={'contact'}
                                   spy={true}
                                   smooth={true}
                                   offset={-50}

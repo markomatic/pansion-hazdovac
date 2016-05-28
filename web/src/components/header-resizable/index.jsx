@@ -1,9 +1,8 @@
 'use strict';
 
-import React from 'react';
-import './header-resizable.scss';
+import React, { Component } from 'react';
 
-export default class extends React.Component {
+export default class extends Component {
     constructor(props) {
         super(props);
 
@@ -52,7 +51,8 @@ export default class extends React.Component {
         }
 
         return (
-            <div className={className} style={this.state.style}>
+            <div className={className}
+                 style={this.state.style}>
                 {this.props.children}
             </div>
         );

@@ -1,0 +1,47 @@
+/*
+
+Apply css for screen sizes
+
+*/
+
+@mixin for-screen($dimension) {
+  @if $dimension == x-small {
+    @media all and (max-width: 480px) {
+      @content;
+    }
+  } @else if $dimension == small {
+    @media all and (max-width: 640px) {
+      @content;
+    }
+  } @else if $dimension == medium {
+    @media all and (max-width: 768px) {
+      @content;
+    }
+  } @else if $dimension == large {
+    @media all and (max-width: 1000px) {
+      @content;
+    }
+  }
+}
+
+/*
+
+Misc
+
+*/
+
+@mixin tap-highlight-color($color) {
+  -webkit-tap-highlight-color: $color;
+}
+
+/*
+
+Elements styling
+
+*/
+
+@mixin light-box-element-style {
+  border: 1px solid $boxLightBorder;
+  background: $boxLightBackground;
+  box-shadow: 1px 2px 3px $boxLightShadow;
+}

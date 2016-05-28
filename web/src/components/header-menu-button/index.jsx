@@ -1,9 +1,8 @@
 'use strict';
 
-import React from 'react';
-import './header-menu-button.scss';
+import React, { Component } from 'react';
 
-export default class extends React.Component {
+export default class extends Component {
     render() {
         return (
             <div className={'HeaderMenuButton'}

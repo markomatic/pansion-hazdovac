@@ -1,11 +1,10 @@
 'use strict';
 
-import React from 'react';
-import {slide as BurgerMenu} from 'react-burger-menu';
-import Menu from './../menu/menu.jsx';
-import './side-menu.scss';
+import React, { Component } from 'react';
+import { slide as BurgerMenu } from 'react-burger-menu';
+import Menu from './../menu';
 
-export default class extends React.Component {
+export default class extends Component {
     constructor(props) {
         super(props);
 

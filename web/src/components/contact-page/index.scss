@@ -1,0 +1,38 @@
+.ContactPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include for-screen(small) {
+    flex-direction: column;
+  }
+
+  .Map {
+    flex: 1 1 auto;
+    margin-top: 10px;
+  }
+
+  .contactInfo {
+    flex: 1 1 auto;
+    min-width: 300px;
+
+    @include for-screen(small) {
+      min-width: initial;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .box {
+        @include light-box-element-style;
+        margin: 10px 10px 0;
+        padding: 20px;
+        width: 250px;
+      }
+    }
+  }
+}

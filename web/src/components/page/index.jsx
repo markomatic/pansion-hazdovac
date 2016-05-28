@@ -1,11 +1,10 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-import NextPageLink from './../next-page-link/next-page-link.jsx';
-import './page.scss';
+import NextPageLink from './../next-page-link';
 
-export default class Page extends React.Component {
+export default class Page extends Component {
     render() {
         let className = 'Page';
         const props = this.props;

@@ -1,16 +1,14 @@
-@import './../../base';
-
 .HeaderMenuButton {
-  @include flex;
-  @include align-items(center);
+  display: flex;
+  align-items: center;
   height: 100%;
   @include tap-highlight-color(rgba(0,0,0,0));
 
   .button {
     cursor: pointer;
-    @include flex;
-    @include flex-direction(column);
-    @include justify-content(space-around);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 30px;
     width: 30px;
 

@@ -1,0 +1,9 @@
+#app {
+  .SideMenu {
+    display: none;
+
+    @include for-screen(small) {
+      display: block;
+    }
+  }
+}

@@ -90,4 +90,4 @@ node_modules/
 /.project
 
 # project structure
-dist
+build/

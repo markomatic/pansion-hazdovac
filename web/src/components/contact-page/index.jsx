@@ -1,15 +1,14 @@
 'use strict';
 
-import React from 'react';
-import Page from './../page/page.jsx';
-import Map from './../map/map.jsx';
-import './contact-page.scss';
+import React, { Component } from 'react';
+import Page from './../page';
+import Map from './../map';
 
-export default class extends React.Component {
+export default class extends Component {
     render() {
         return (
-            <Page className={'ContactPage'}
-                  page="contact" {...this.props}>
+            <Page {...this.props} className={'ContactPage'}
+                                  page={'contact'}>
                 <div className={'contactInfo'}>
                     <div className={'info'}>
                         <div className={'box'}>

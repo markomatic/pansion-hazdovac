@@ -1,12 +1,11 @@
 'use strict';
 
-import React from 'react';
-import Gallery from 'react-photo-gallery';
-import Page from './../page/page.jsx';
+import React, { Component } from 'react';
+import Gallery from './../react-photo-gallery';
+import Page from './../page';
 import preloadImages from './../../utils/preload-images.js';
-import './gallery-page.scss';
 
-export default class extends React.Component {
+export default class extends Component {
     componentWillMount() {
         preloadImages(
             'http://intelligenttravel.nationalgeographic.com/files/2012/07/Surfers_Paradise_Warren_Keelan_367408.jpg',
@@ -25,8 +24,8 @@ export default class extends React.Component {
 
     render() {
         return (
-            <Page className="GalleryPage"
-                  page="gallery" {...this.props}>
+            <Page {...this.props} className={'GalleryPage'}
+                                  page={'gallery'}>
                 <Gallery photos={galleryImages} /><br />
                 <div style={{clear: 'both'}}></div>
             </Page>
