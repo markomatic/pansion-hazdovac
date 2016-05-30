@@ -5,8 +5,7 @@ const path = require('path');
 
 const DEBUG = !argv.release;
 const include_src = [
-    path.resolve(__dirname, 'src'),
-    path.resolve(__dirname, 'node_modules/react-photo-gallery/src')
+    path.resolve(__dirname, 'src')
 ];
 
 const appConfig = {
