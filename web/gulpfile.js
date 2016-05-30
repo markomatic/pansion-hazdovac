@@ -32,7 +32,8 @@ const removeNodeModules = [
 ];
 
 const removeNodeModulesFrom = [
-    'react-photo-gallery'
+    'react-photo-gallery',
+    'react-images'
 ];
 
 // Clean output directory
