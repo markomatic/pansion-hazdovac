@@ -4,6 +4,10 @@ const argv = require('minimist')(process.argv.slice(2));
 const path = require('path');
 
 const DEBUG = !argv.release;
+const include_src = [
+    path.resolve(__dirname, 'src'),
+    path.resolve(__dirname, 'node_modules/react-photo-gallery/src')
+];
 
 const appConfig = {
     cache: DEBUG,
@@ -21,7 +25,8 @@ const appConfig = {
         vendor: [
             'react',
             'react-dom',
-            'react-scroll'
+            'react-scroll',
+            'react-photo-gallery'
         ]
     },
     output: {
@@ -32,7 +37,7 @@ const appConfig = {
         loaders: [
             {
                 test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
+                include: include_src,
                 loaders: ['babel']
             }
         ]

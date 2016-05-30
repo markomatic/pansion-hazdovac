@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Gallery from './../react-photo-gallery';
+import Gallery from 'react-photo-gallery';
 import Page from './../page';
 import preloadImages from './../../utils/preload-images.js';
 

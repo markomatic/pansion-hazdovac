@@ -6,6 +6,8 @@ const del = require('del');
 const runSequence = require('run-sequence');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const path = require('path');
+const _ = require('lodash');
 const argv = require('minimist')(process.argv.slice(2));
 
 const RELEASE = !!argv.release;
@@ -21,8 +23,17 @@ const AUTOPREFIXER_BROWSERS = [ // https://github.com/ai/browserslist
     'Android >= 4.4'
 ];
 
-let src = {};
+const src = {};
 let watch = false;
+
+const removeNodeModules = [
+    'react',
+    'react-dom'
+];
+
+const removeNodeModulesFrom = [
+    'react-photo-gallery'
+];
 
 // Clean output directory
 gulp.task('clean', del.bind(
@@ -65,6 +76,24 @@ gulp.task('styles', () => {
         .pipe($.size({title: 'styles'}));
 });
 
+// Remove sub modules that will raise error if installed
+gulp.task('remove-node-modules', cb => {
+    del(
+        _.flatten(
+            removeNodeModulesFrom.map(fromModule =>
+                removeNodeModules.map(removeModule =>
+                    path.join('node_modules', fromModule, 'node_modules', removeModule)
+                )
+            )
+        )
+    ).then(function(paths) {
+        if (argv.verbose) {
+            $.util.log('[remove-node-modules]\n', paths.join('\n'));
+        }
+        cb();
+    });
+});
+
 // Bundle
 gulp.task('bundle', cb => {
     let started = false;
@@ -95,7 +124,7 @@ gulp.task('bundle', cb => {
 
 // Build the app from source code
 gulp.task('build', ['clean'], cb => {
-    runSequence(['fonts', 'assets', 'styles', 'bundle'], cb);
+    runSequence(['fonts', 'assets', 'styles', 'remove-node-modules', 'bundle'], cb);
 });
 
 // Build and start watching for modifications
