@@ -1,12 +1,36 @@
 .NextPageLink {
-  text-align: center;
-  padding-top: 10px;
+  $arrowSize: 30px;
 
-  div.image {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    background-image: url('../assets/next-page.png');
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  .arrow-box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $arrowSize * 2;
+    height: $arrowSize;
+    overflow: hidden;
+
+    .line-arrow {
+      display: block;
+      width: $arrowSize;
+      height: $arrowSize;
+      margin-top: -28%;
+      border-top: 3px solid $arrowColor;
+      border-left: 3px solid $arrowColor;
+
+      &.bottom {
+        transform: rotate(-145deg) skew(-20deg);
+      }
+    }
+
+    &:hover,
+    &:active {
+      .line-arrow {
+        border-color: $arrowColorAlternate;
+      }
+    }
   }
 }

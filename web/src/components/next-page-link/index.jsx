@@ -20,7 +20,9 @@ export default class extends Component {
                       smooth={true}
                       offset={-50}
                       duration={500}>
-                    <div className={'image'}></div>
+                    <div className={'arrow-box'}>
+                        <div className={'line-arrow bottom'}></div>
+                    </div>
                 </Link>
             </div>
         );

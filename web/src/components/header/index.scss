@@ -4,6 +4,7 @@
 
   .Sticky {
     background-color: $headerBackgroundColor;
+    z-index: 1;
   }
 
   .HeaderResizable {

@@ -8,17 +8,40 @@ import preloadImages from './../../utils/preload-images.js';
 export default class extends Component {
     componentWillMount() {
         preloadImages(
-            'http://intelligenttravel.nationalgeographic.com/files/2012/07/Surfers_Paradise_Warren_Keelan_367408.jpg',
-            'http://2.bp.blogspot.com/-VvljT5Gz25Y/UAkCTyqz3PI/AAAAAAAACtQ/szEH6pCuNKo/s1600/HD-lightning-over-ocean-nature-wallpaper.jpg',
-            'http://www.collegecounseling.org/wp-content/uploads/bigstock-Tropical-Panorama-93246-1024x275.jpg',
-            'http://4.bp.blogspot.com/-_BkUlfUa2yk/T2HOO6WuY9I/AAAAAAAAAew/wDS2mhYI8hk/s1600/3D+Green+Nature+Wallpaper.jpg',
-            'http://www.hawaii-all-inclusive.net/files/3318241/uploaded/all-inclusive-waikiki-hawaii-vacation-package.jpg',
-            'http://unirea.org.au/images/AutsonSlideshowA/Gold%20Coast%20-%20Queensland.png',
-            'http://2.bp.blogspot.com/-emsgvYPrIZg/UfIbWCQ4KoI/AAAAAAAAAAw/vMwQWd71xts/s1600/studio+background+03JPG.jpg',
-            'http://images2.fanpop.com/images/photos/7800000/Amazing-Nature-Wallpapers-national-geographic-7896974-1280-960.jpg',
-            'https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/24125942/Hilton-Hawaiian-Village-1024x589.jpg',
-            'http://desktopbackgrounds1.com/wp-content/uploads/2012/03/cool-nature-desktop-backgrounds-2.jpg',
-            'https://i.ytimg.com/vi/qjNmcXnTpXE/maxresdefault.jpg'
+            'assets/gallery/1.jpg',
+            'assets/gallery/2.jpg',
+            'assets/gallery/3.jpg',
+            'assets/gallery/4.jpg',
+            'assets/gallery/5.jpg',
+            'assets/gallery/6.jpg',
+            'assets/gallery/7.jpg',
+            'assets/gallery/8.jpg',
+            'assets/gallery/9.jpg',
+            'assets/gallery/10.jpg',
+            'assets/gallery/11.jpg',
+            'assets/gallery/12.jpg',
+            'assets/gallery/13.jpg',
+            'assets/gallery/14.jpg',
+            'assets/gallery/15.jpg',
+            'assets/gallery/16.jpg',
+            'assets/gallery/17.jpg',
+            'assets/gallery/18.jpg',
+            'assets/gallery/19.jpg',
+            'assets/gallery/20.jpg',
+            'assets/gallery/21.jpg',
+            'assets/gallery/22.jpg',
+            'assets/gallery/23.jpg',
+            'assets/gallery/24.jpg',
+            'assets/gallery/25.jpg',
+            'assets/gallery/26.jpg',
+            'assets/gallery/27.jpg',
+            'assets/gallery/28.jpg',
+            'assets/gallery/29.jpg',
+            'assets/gallery/30.jpg',
+            'assets/gallery/31.jpg',
+            'assets/gallery/32.jpg',
+            'assets/gallery/33.jpg',
+            'assets/gallery/34.jpg'
         );
     }
 
@@ -35,102 +58,309 @@ export default class extends Component {
 
 const galleryImages = [
     {
-        src: 'http://intelligenttravel.nationalgeographic.com/files/2012/07/Surfers_Paradise_Warren_Keelan_367408.jpg',
-        width: 1600,
-        height: 1067,
-        aspectRatio: 1600/1067,
+        src: 'assets/gallery/1.jpg',
+        width: 2592,
+        height: 1718,
+        aspectRatio: 2592/1718,
         lightboxImage:{
-            src: 'http://intelligenttravel.nationalgeographic.com/files/2012/07/Surfers_Paradise_Warren_Keelan_367408.jpg'
+            src: 'assets/gallery/1.jpg'
         }
     },
     {
-        src: 'http://2.bp.blogspot.com/-VvljT5Gz25Y/UAkCTyqz3PI/AAAAAAAACtQ/szEH6pCuNKo/s1600/HD-lightning-over-ocean-nature-wallpaper.jpg',
-        width: 1366,
-        height: 768,
-        aspectRatio: 1366/768,
+        src: 'assets/gallery/2.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
         lightboxImage:{
-            src: 'http://2.bp.blogspot.com/-VvljT5Gz25Y/UAkCTyqz3PI/AAAAAAAACtQ/szEH6pCuNKo/s1600/HD-lightning-over-ocean-nature-wallpaper.jpg'
+            src: 'assets/gallery/2.jpg'
         }
     },
     {
-        src: 'http://www.collegecounseling.org/wp-content/uploads/bigstock-Tropical-Panorama-93246-1024x275.jpg',
-        width: 1024,
-        height: 275,
-        aspectRatio: 1024/275,
+        src: 'assets/gallery/3.jpg',
+        width: 1959,
+        height: 1717,
+        aspectRatio: 1959/1717,
         lightboxImage:{
-            src: 'http://www.collegecounseling.org/wp-content/uploads/bigstock-Tropical-Panorama-93246-1024x275.jpg'
+            src: 'assets/gallery/3.jpg'
         }
     },
     {
-        src: 'http://4.bp.blogspot.com/-_BkUlfUa2yk/T2HOO6WuY9I/AAAAAAAAAew/wDS2mhYI8hk/s1600/3D+Green+Nature+Wallpaper.jpg',
-        width: 1024,
-        height: 768,
-        aspectRatio: 1024/768,
+        src: 'assets/gallery/4.jpg',
+        width: 2204,
+        height: 3305,
+        aspectRatio: 2204/3305,
         lightboxImage:{
-            src: 'http://4.bp.blogspot.com/-_BkUlfUa2yk/T2HOO6WuY9I/AAAAAAAAAew/wDS2mhYI8hk/s1600/3D+Green+Nature+Wallpaper.jpg'
+            src: 'assets/gallery/4.jpg'
         }
     },
     {
-        src: 'http://www.hawaii-all-inclusive.net/files/3318241/uploaded/all-inclusive-waikiki-hawaii-vacation-package.jpg',
-        width: 1296,
-        height: 972,
-        aspectRatio: 1296/972,
+        src: 'assets/gallery/5.jpg',
+        width: 2592,
+        height: 1718,
+        aspectRatio: 2592/1718,
         lightboxImage:{
-            src: 'http://www.hawaii-all-inclusive.net/files/3318241/uploaded/all-inclusive-waikiki-hawaii-vacation-package.jpg'
+            src: 'assets/gallery/5.jpg'
         }
     },
     {
-        src: 'http://2.bp.blogspot.com/-emsgvYPrIZg/UfIbWCQ4KoI/AAAAAAAAAAw/vMwQWd71xts/s1600/studio+background+03JPG.jpg',
-        width: 1067,
-        height: 1600,
-        aspectRatio: 1067/1600,
+        src: 'assets/gallery/6.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
         lightboxImage:{
-            src: 'http://2.bp.blogspot.com/-emsgvYPrIZg/UfIbWCQ4KoI/AAAAAAAAAAw/vMwQWd71xts/s1600/studio+background+03JPG.jpg'
+            src: 'assets/gallery/6.jpg'
         }
     },
     {
-        src: 'http://unirea.org.au/images/AutsonSlideshowA/Gold%20Coast%20-%20Queensland.png',
-        width: 1577,
-        height: 573,
-        aspectRatio: 1577/573,
+        src: 'assets/gallery/7.jpg',
+        width: 2592,
+        height: 1377,
+        aspectRatio: 2592/1377,
         lightboxImage:{
-            src: 'http://unirea.org.au/images/AutsonSlideshowA/Gold%20Coast%20-%20Queensland.png'
+            src: 'assets/gallery/7.jpg'
         }
     },
     {
-        src: 'http://images2.fanpop.com/images/photos/7800000/Amazing-Nature-Wallpapers-national-geographic-7896974-1280-960.jpg',
-        width: 1280,
-        height: 960,
-        aspectRatio: 1280/960,
+        src: 'assets/gallery/8.jpg',
+        width: 2816,
+        height: 1754,
+        aspectRatio: 2816/1754,
         lightboxImage:{
-            src: 'http://images2.fanpop.com/images/photos/7800000/Amazing-Nature-Wallpapers-national-geographic-7896974-1280-960.jpg'
+            src: 'assets/gallery/8.jpg'
         }
     },
     {
-        src: 'https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/24125942/Hilton-Hawaiian-Village-1024x589.jpg',
-        width: 1024,
-        height: 589,
-        aspectRatio: 1024/589,
+        src: 'assets/gallery/9.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
         lightboxImage:{
-            src: 'https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/24125942/Hilton-Hawaiian-Village-1024x589.jpg'
+            src: 'assets/gallery/9.jpg'
         }
     },
     {
-        src: 'http://desktopbackgrounds1.com/wp-content/uploads/2012/03/cool-nature-desktop-backgrounds-2.jpg',
-        width: 1024,
-        height: 768,
-        aspectRatio: 1024/768,
+        src: 'assets/gallery/10.jpg',
+        width: 1972,
+        height: 2112,
+        aspectRatio: 1972/2112,
         lightboxImage:{
-            src: 'http://desktopbackgrounds1.com/wp-content/uploads/2012/03/cool-nature-desktop-backgrounds-2.jpg'
+            src: 'assets/gallery/10.jpg'
         }
     },
     {
-        src: 'https://i.ytimg.com/vi/qjNmcXnTpXE/maxresdefault.jpg',
-        width: 1280,
-        height: 720,
-        aspectRatio: 1280/720,
+        src: 'assets/gallery/11.jpg',
+        width: 2641,
+        height: 1579,
+        aspectRatio: 2641/1579,
         lightboxImage:{
-            src: 'https://i.ytimg.com/vi/qjNmcXnTpXE/maxresdefault.jpg'
+            src: 'assets/gallery/11.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/12.jpg',
+        width: 2816,
+        height: 2009,
+        aspectRatio: 2816/2009,
+        lightboxImage:{
+            src: 'assets/gallery/12.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/13.jpg',
+        width: 3920,
+        height: 2204,
+        aspectRatio: 3920/2204,
+        lightboxImage:{
+            src: 'assets/gallery/13.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/14.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/14.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/15.jpg',
+        width: 2112,
+        height: 2816,
+        aspectRatio: 2112/2816,
+        lightboxImage:{
+            src: 'assets/gallery/15.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/16.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/16.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/17.jpg',
+        width: 2112,
+        height: 2816,
+        aspectRatio: 2112/2816,
+        lightboxImage:{
+            src: 'assets/gallery/17.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/18.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/18.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/19.jpg',
+        width: 2816,
+        height: 1777,
+        aspectRatio: 2816/1777,
+        lightboxImage:{
+            src: 'assets/gallery/19.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/20.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/20.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/21.jpg',
+        width: 2593,
+        height: 1421,
+        aspectRatio: 2593/1421,
+        lightboxImage:{
+            src: 'assets/gallery/21.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/22.jpg',
+        width: 2705,
+        height: 2029,
+        aspectRatio: 2705/2029,
+        lightboxImage:{
+            src: 'assets/gallery/22.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/23.jpg',
+        width: 2112,
+        height: 2816,
+        aspectRatio: 2112/2816,
+        lightboxImage:{
+            src: 'assets/gallery/23.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/24.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/24.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/25.jpg',
+        width: 2468,
+        height: 2112,
+        aspectRatio: 2468/2112,
+        lightboxImage:{
+            src: 'assets/gallery/25.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/26.jpg',
+        width: 2816,
+        height: 2112,
+        aspectRatio: 2816/2112,
+        lightboxImage:{
+            src: 'assets/gallery/26.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/27.jpg',
+        width: 3215,
+        height: 2204,
+        aspectRatio: 3215/2204,
+        lightboxImage:{
+            src: 'assets/gallery/27.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/28.jpg',
+        width: 3920,
+        height: 2204,
+        aspectRatio: 3920/2204,
+        lightboxImage:{
+            src: 'assets/gallery/28.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/29.jpg',
+        width: 2119,
+        height: 2245,
+        aspectRatio: 2119/2245,
+        lightboxImage:{
+            src: 'assets/gallery/29.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/30.jpg',
+        width: 3145,
+        height: 1769,
+        aspectRatio: 3145/1769,
+        lightboxImage:{
+            src: 'assets/gallery/30.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/31.jpg',
+        width: 3920,
+        height: 2204,
+        aspectRatio: 3920/2204,
+        lightboxImage:{
+            src: 'assets/gallery/31.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/32.jpg',
+        width: 2204,
+        height: 3920,
+        aspectRatio: 2204/3920,
+        lightboxImage:{
+            src: 'assets/gallery/32.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/33.jpg',
+        width: 3920,
+        height: 2204,
+        aspectRatio: 3920/2204,
+        lightboxImage:{
+            src: 'assets/gallery/33.jpg'
+        }
+    },
+    {
+        src: 'assets/gallery/34.jpg',
+        width: 2592,
+        height: 1317,
+        aspectRatio: 2592/1317,
+        lightboxImage:{
+            src: 'assets/gallery/34.jpg'
         }
     }
 ];

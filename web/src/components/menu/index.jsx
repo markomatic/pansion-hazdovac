@@ -6,53 +6,33 @@ import { Link } from 'react-scroll';
 export default class extends Component {
     render() {
         const active = window.pageYOffset === 0 ? true : undefined;
+        const linkProps = {
+            activeClass: 'selected',
+            spy: true,
+            smooth: true,
+            offset: -50,
+            duration: 500,
+            onClick: this.handleItemClick.bind(this)
+        };
 
         return (
             <div className={'Menu'}>
                 <nav>
                     <ul>
                         <li>
-                            <Link activeClass={'selected'}
-                                  active={active}
-                                  to={'landing'}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-70}
-                                  duration={500}
-                                  onClick={this.handleItemClick.bind(this)}>
+                            <Link {...linkProps} active={active}
+                                                 to={'landing'}
+                                                 offset={-70}>
                                 <span>Home</span>
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass={'selected'}
-                                  to={'prices'}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-70}
-                                  duration={500}
-                                  onClick={this.handleItemClick.bind(this)}>
-                                <span>Prices</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass={'selected'}
-                                  to={'gallery'}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-50}
-                                  duration={500}
-                                  onClick={this.handleItemClick.bind(this)}>
+                            <Link {...linkProps} to={'gallery'}>
                                 <span>Gallery</span>
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass={'selected'}
-                                  to={'contact'}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-50}
-                                  duration={500}
-                                  onClick={this.handleItemClick.bind(this)}>
+                            <Link {...linkProps} to={'contact'}>
                                 <span>Contact</span>
                             </Link>
                         </li>

@@ -20,12 +20,7 @@ export default class extends Component {
                               linkOffset={50}/>
                     <div id={'content-container'}>
                         <Header onSideMenuOpen={this.handleOnSideMenuOpen.bind(this)}/>
-                        <LandingPage nextPage={'prices'}/>
-                        <Page className={'PricesPage'}
-                              page={'prices'}
-                              nextPage={'gallery'}>
-                            <p>This is prices page</p>
-                        </Page>
+                        <LandingPage nextPage={'gallery'}/>
                         <GalleryPage nextPage={'contact'} />
                         <ContactPage />
                     </div>
