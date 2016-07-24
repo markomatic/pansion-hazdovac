@@ -59,18 +59,18 @@ export default class extends Component {
 const galleryImages = [
     {
         src: 'assets/gallery/1.jpg',
-        width: 2592,
-        height: 1718,
-        aspectRatio: 2592/1718,
+        width: 2000,
+        height: 1326,
+        aspectRatio: 2000/1326,
         lightboxImage:{
             src: 'assets/gallery/1.jpg'
         }
     },
     {
         src: 'assets/gallery/2.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/2.jpg'
         }
@@ -86,279 +86,279 @@ const galleryImages = [
     },
     {
         src: 'assets/gallery/4.jpg',
-        width: 2204,
-        height: 3305,
-        aspectRatio: 2204/3305,
+        width: 1334,
+        height: 2000,
+        aspectRatio: 1334/2000,
         lightboxImage:{
             src: 'assets/gallery/4.jpg'
         }
     },
     {
         src: 'assets/gallery/5.jpg',
-        width: 2592,
-        height: 1718,
-        aspectRatio: 2592/1718,
+        width: 2000,
+        height: 1326,
+        aspectRatio: 2000/1326,
         lightboxImage:{
             src: 'assets/gallery/5.jpg'
         }
     },
     {
         src: 'assets/gallery/6.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/6.jpg'
         }
     },
     {
         src: 'assets/gallery/7.jpg',
-        width: 2592,
-        height: 1377,
-        aspectRatio: 2592/1377,
+        width: 2000,
+        height: 1063,
+        aspectRatio: 2000/1063,
         lightboxImage:{
             src: 'assets/gallery/7.jpg'
         }
     },
     {
         src: 'assets/gallery/8.jpg',
-        width: 2816,
-        height: 1754,
-        aspectRatio: 2816/1754,
+        width: 2000,
+        height: 1246,
+        aspectRatio: 2000/1246,
         lightboxImage:{
             src: 'assets/gallery/8.jpg'
         }
     },
     {
         src: 'assets/gallery/9.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/9.jpg'
         }
     },
     {
         src: 'assets/gallery/10.jpg',
-        width: 1972,
-        height: 2112,
-        aspectRatio: 1972/2112,
+        width: 1867,
+        height: 2000,
+        aspectRatio: 1867/2000,
         lightboxImage:{
             src: 'assets/gallery/10.jpg'
         }
     },
     {
         src: 'assets/gallery/11.jpg',
-        width: 2641,
-        height: 1579,
-        aspectRatio: 2641/1579,
+        width: 2000,
+        height: 1196,
+        aspectRatio: 2000/1196,
         lightboxImage:{
             src: 'assets/gallery/11.jpg'
         }
     },
     {
         src: 'assets/gallery/12.jpg',
-        width: 2816,
-        height: 2009,
-        aspectRatio: 2816/2009,
+        width: 2000,
+        height: 1427,
+        aspectRatio: 2000/1427,
         lightboxImage:{
             src: 'assets/gallery/12.jpg'
         }
     },
     {
         src: 'assets/gallery/13.jpg',
-        width: 3920,
-        height: 2204,
-        aspectRatio: 3920/2204,
+        width: 2000,
+        height: 1124,
+        aspectRatio: 2000/1124,
         lightboxImage:{
             src: 'assets/gallery/13.jpg'
         }
     },
     {
         src: 'assets/gallery/14.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/14.jpg'
         }
     },
     {
         src: 'assets/gallery/15.jpg',
-        width: 2112,
-        height: 2816,
-        aspectRatio: 2112/2816,
+        width: 1500,
+        height: 2000,
+        aspectRatio: 1500/2000,
         lightboxImage:{
             src: 'assets/gallery/15.jpg'
         }
     },
     {
         src: 'assets/gallery/16.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/16.jpg'
         }
     },
     {
         src: 'assets/gallery/17.jpg',
-        width: 2112,
-        height: 2816,
-        aspectRatio: 2112/2816,
+        width: 1500,
+        height: 2000,
+        aspectRatio: 1500/2000,
         lightboxImage:{
             src: 'assets/gallery/17.jpg'
         }
     },
     {
         src: 'assets/gallery/18.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/18.jpg'
         }
     },
     {
         src: 'assets/gallery/19.jpg',
-        width: 2816,
-        height: 1777,
-        aspectRatio: 2816/1777,
+        width: 2000,
+        height: 1262,
+        aspectRatio: 2000/1262,
         lightboxImage:{
             src: 'assets/gallery/19.jpg'
         }
     },
     {
         src: 'assets/gallery/20.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/20.jpg'
         }
     },
     {
         src: 'assets/gallery/21.jpg',
-        width: 2593,
-        height: 1421,
-        aspectRatio: 2593/1421,
+        width: 2000,
+        height: 1096,
+        aspectRatio: 2000/1096,
         lightboxImage:{
             src: 'assets/gallery/21.jpg'
         }
     },
     {
         src: 'assets/gallery/22.jpg',
-        width: 2705,
-        height: 2029,
-        aspectRatio: 2705/2029,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/22.jpg'
         }
     },
     {
         src: 'assets/gallery/23.jpg',
-        width: 2112,
-        height: 2816,
-        aspectRatio: 2112/2816,
+        width: 1500,
+        height: 2000,
+        aspectRatio: 1500/2000,
         lightboxImage:{
             src: 'assets/gallery/23.jpg'
         }
     },
     {
         src: 'assets/gallery/24.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/24.jpg'
         }
     },
     {
         src: 'assets/gallery/25.jpg',
-        width: 2468,
-        height: 2112,
-        aspectRatio: 2468/2112,
+        width: 2000,
+        height: 1712,
+        aspectRatio: 2000/1712,
         lightboxImage:{
             src: 'assets/gallery/25.jpg'
         }
     },
     {
         src: 'assets/gallery/26.jpg',
-        width: 2816,
-        height: 2112,
-        aspectRatio: 2816/2112,
+        width: 2000,
+        height: 1500,
+        aspectRatio: 2000/1500,
         lightboxImage:{
             src: 'assets/gallery/26.jpg'
         }
     },
     {
         src: 'assets/gallery/27.jpg',
-        width: 3215,
-        height: 2204,
-        aspectRatio: 3215/2204,
+        width: 2000,
+        height: 1371,
+        aspectRatio: 2000/1371,
         lightboxImage:{
             src: 'assets/gallery/27.jpg'
         }
     },
     {
         src: 'assets/gallery/28.jpg',
-        width: 3920,
-        height: 2204,
-        aspectRatio: 3920/2204,
+        width: 2000,
+        height: 1124,
+        aspectRatio: 2000/1124,
         lightboxImage:{
             src: 'assets/gallery/28.jpg'
         }
     },
     {
         src: 'assets/gallery/29.jpg',
-        width: 2119,
-        height: 2245,
-        aspectRatio: 2119/2245,
+        width: 1888,
+        height: 2000,
+        aspectRatio: 1888/2000,
         lightboxImage:{
             src: 'assets/gallery/29.jpg'
         }
     },
     {
         src: 'assets/gallery/30.jpg',
-        width: 3145,
-        height: 1769,
-        aspectRatio: 3145/1769,
+        width: 2000,
+        height: 1125,
+        aspectRatio: 2000/1125,
         lightboxImage:{
             src: 'assets/gallery/30.jpg'
         }
     },
     {
         src: 'assets/gallery/31.jpg',
-        width: 3920,
-        height: 2204,
-        aspectRatio: 3920/2204,
+        width: 2000,
+        height: 1124,
+        aspectRatio: 2000/1124,
         lightboxImage:{
             src: 'assets/gallery/31.jpg'
         }
     },
     {
         src: 'assets/gallery/32.jpg',
-        width: 2204,
-        height: 3920,
-        aspectRatio: 2204/3920,
+        width: 1124,
+        height: 2000,
+        aspectRatio: 1124/2000,
         lightboxImage:{
             src: 'assets/gallery/32.jpg'
         }
     },
     {
         src: 'assets/gallery/33.jpg',
-        width: 3920,
-        height: 2204,
-        aspectRatio: 3920/2204,
+        width: 2000,
+        height: 1124,
+        aspectRatio: 2000/1124,
         lightboxImage:{
             src: 'assets/gallery/33.jpg'
         }
     },
     {
         src: 'assets/gallery/34.jpg',
-        width: 2592,
-        height: 1317,
-        aspectRatio: 2592/1317,
+        width: 2000,
+        height: 1016,
+        aspectRatio: 2000/1016,
         lightboxImage:{
             src: 'assets/gallery/34.jpg'
         }
