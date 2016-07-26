@@ -4,3 +4,6 @@
 [submodule "web/modules/react-photo-gallery"]
 	path = web/modules/react-photo-gallery
 	url = https://github.com/markomatic/react-photo-gallery.git
+[submodule "web/modules/lazy-image"]
+	path = web/modules/lazy-image
+	url = https://github.com/markomatic/LazyImage.git
