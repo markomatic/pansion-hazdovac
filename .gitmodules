@@ -4,9 +4,6 @@
 [submodule "web/modules/react-photo-gallery"]
 	path = web/modules/react-photo-gallery
 	url = https://github.com/markomatic/react-photo-gallery.git
-[submodule "web/modules/lazy-image"]
-	path = web/modules/lazy-image
-	url = https://github.com/markomatic/LazyImage.git
 [submodule "web/modules/react-stack-blur"]
 	path = web/modules/react-stack-blur
 	url = https://github.com/markomatic/react-stack-blur.git
