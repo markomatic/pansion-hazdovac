@@ -1,3 +1,6 @@
 [submodule "web/modules/react-scroll"]
 	path = web/modules/react-scroll
 	url = https://github.com/markomatic/react-scroll.git
+[submodule "web/modules/react-photo-gallery"]
+	path = web/modules/react-photo-gallery
+	url = https://github.com/markomatic/react-photo-gallery.git
