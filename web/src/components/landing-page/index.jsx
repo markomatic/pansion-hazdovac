@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import Page from './../page';
+import preloadImages from './../../utils/preload-images.js';
 
 export default class extends Component {
     render() {
@@ -22,3 +23,6 @@ export default class extends Component {
     }
 }
 
+preloadImages(
+    'assets/landing.jpg'
+);
