@@ -10,3 +10,6 @@
 [submodule "web/modules/react-stack-blur"]
 	path = web/modules/react-stack-blur
 	url = https://github.com/markomatic/react-stack-blur.git
+[submodule "web/modules/react-progressive-image"]
+	path = web/modules/react-progressive-image
+	url = https://github.com/markomatic/react-progressive-image.git
