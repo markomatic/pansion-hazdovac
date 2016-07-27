@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
+import preloadImages from './../../utils/preload-images.js';
 
 export default class extends Component {
     render() {
@@ -9,3 +10,7 @@ export default class extends Component {
         );
     }
 }
+
+preloadImages(
+    'assets/logo.png'
+);

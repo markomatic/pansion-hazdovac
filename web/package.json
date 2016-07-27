@@ -34,6 +34,7 @@
     "react-burger-menu": "^1.9.9",
     "react-dom": "^15.2.1",
     "react-photo-gallery": "file:modules/react-photo-gallery",
+    "react-progressive-image": "file:modules/react-progressive-image",
     "react-scroll": "file:modules/react-scroll",
     "react-sticky": "^5.0.4",
     "run-sequence": "^1.2.1",
